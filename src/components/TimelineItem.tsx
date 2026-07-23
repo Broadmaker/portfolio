@@ -8,15 +8,17 @@ export function TimelineItem({ item, isLast }: { item: ExperienceItem; isLast: b
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.45, ease: 'easeOut' }}
-      className="relative flex gap-6 md:gap-10"
+      className="relative flex gap-5 md:gap-8"
     >
       <div className="flex flex-col items-center">
         {item.logo ? (
-          <img
-            src={item.logo}
-            alt={`${item.company} logo`}
-            className="mt-1 h-10 w-10 shrink-0 rounded-full object-contain bg-surface dark:bg-surface-dark ring-2 ring-line dark:ring-line-dark p-1"
-          />
+          <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-line dark:border-line-dark bg-white dark:bg-surface-dark shadow-md">
+            <img
+              src={item.logo}
+              alt={`${item.company} logo`}
+              className="h-14 w-14 object-contain"
+            />
+          </div>
         ) : (
           <span className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-accent dark:bg-accent-light ring-4 ring-accent-soft dark:ring-accent-softDark" />
         )}

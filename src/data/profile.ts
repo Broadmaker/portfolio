@@ -10,7 +10,7 @@ export const profile = {
   ],
   availability: 'Open to work',
   email: 'sanigkram24@gmail.com',
-  resumeUrl: '/resume.pdf',
+
 }
 
 export const socials = [
