@@ -2,15 +2,14 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
-    id: 'ledger',
-    title: 'Ledger',
+    id: 'deped-qms',
+    title: 'DepEd Training QMS',
     description:
-      'A minimal expense-tracking app with real-time sync, shared budgets, and exportable reports. Built for couples and small teams who want clarity without spreadsheets.',
-    tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
+      'A training quality management system for the Department of Education — tracks training programs, participant records, evaluations, and generates compliance reports. Built on Cloudflare Workers with D1 for the database layer.',
+    tags: ['React', 'TypeScript', 'Vite', 'Cloudflare Workers', 'Cloudflare D1'],
     image:
-      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop',
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/',
+      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop',
+    liveUrl: 'https://deped-training-qms.sanigkram24.workers.dev/',
     featured: true,
   },
   {
