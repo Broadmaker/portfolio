@@ -95,6 +95,17 @@ export function Contact() {
               <Mail className="h-4 w-4" />
               {profile.email}
             </a>
+            <div className="mt-8 overflow-hidden rounded-xl border border-line dark:border-line-dark">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=122.55697764735908%2C7.753328273179042%2C122.61697764735908%2C7.813328273179042&layer=mapnik&marker=7.783328273179042%2C122.58697764735908"
+                width="100%"
+                height="220"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+                title="Map of Ipil, Zamboanga Sibugay"
+                className="block"
+              />
+            </div>
           </div>
 
           <motion.form
