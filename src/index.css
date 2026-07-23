@@ -32,6 +32,12 @@
   }
 }
 
+@layer utilities {
+  .map-dark {
+    filter: invert(0.9) hue-rotate(180deg);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

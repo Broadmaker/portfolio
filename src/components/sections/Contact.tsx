@@ -95,20 +95,22 @@ export function Contact() {
               <Mail className="h-4 w-4" />
               {profile.email}
             </a>
-            <div className="mt-8 rounded-xl border border-line dark:border-line-dark bg-surface dark:bg-surface-dark overflow-hidden">
+            <div className="mt-8 rounded-xl border border-line dark:border-line-dark bg-surface dark:bg-surface-dark overflow-hidden group hover:shadow-md transition-shadow duration-300">
               <div className="flex items-center gap-2 px-4 py-2.5 border-b border-line dark:border-line-dark">
                 <MapPin className="h-3.5 w-3.5 text-accent dark:text-accent-light" />
                 <span className="font-mono text-xs text-muted dark:text-muted-dark">{profile.location}</span>
               </div>
-              <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=122.55697764735908%2C7.753328273179042%2C122.61697764735908%2C7.813328273179042&layer=mapnik&marker=7.783328273179042%2C122.58697764735908"
-                width="100%"
-                height="200"
-                loading="lazy"
-                referrerPolicy="no-referrer"
-                title="Map of Ipil, Zamboanga Sibugay"
-                className="block"
-              />
+              <div className="overflow-hidden">
+                <iframe
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=122.55697764735908%2C7.753328273179042%2C122.61697764735908%2C7.813328273179042&layer=mapnik&marker=7.783328273179042%2C122.58697764735908"
+                  width="100%"
+                  height="220"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  title="Map of Ipil, Zamboanga Sibugay"
+                  className="block transition-transform duration-500 group-hover:scale-105 dark:map-dark"
+                />
+              </div>
             </div>
           </div>
 
