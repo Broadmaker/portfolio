@@ -21,6 +21,7 @@ export interface ExperienceItem {
   period: string
   description: string
   highlights: string[]
+  logo?: string
 }
 
 export interface NavLink {

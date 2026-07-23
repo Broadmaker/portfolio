@@ -11,7 +11,15 @@ export function TimelineItem({ item, isLast }: { item: ExperienceItem; isLast: b
       className="relative flex gap-6 md:gap-10"
     >
       <div className="flex flex-col items-center">
-        <span className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-accent dark:bg-accent-light ring-4 ring-accent-soft dark:ring-accent-softDark" />
+        {item.logo ? (
+          <img
+            src={item.logo}
+            alt={`${item.company} logo`}
+            className="mt-1 h-10 w-10 shrink-0 rounded-full object-contain bg-surface dark:bg-surface-dark ring-2 ring-line dark:ring-line-dark p-1"
+          />
+        ) : (
+          <span className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-accent dark:bg-accent-light ring-4 ring-accent-soft dark:ring-accent-softDark" />
+        )}
         {!isLast && <span className="w-px flex-1 bg-line dark:bg-line-dark" />}
       </div>
 
