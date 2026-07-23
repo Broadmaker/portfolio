@@ -1,22 +1,21 @@
 export const profile = {
-  name: 'Alex Rivera',
-  role: 'Software Developer',
-  location: 'Remote · Open to relocation',
+  name: 'Mark Kevin S. Sanig',
+  role: 'Web, Mobile Developer',
+  location: 'Ipil, Zamboanga Sibugay, Philippines',
   tagline:
-    'I build fast, accessible web products with clean code and careful attention to detail.',
+    'Always learning. Always building. One commit at a time.',
   bio: [
-    "I'm a software developer focused on building products that feel simple, even when the problem underneath isn't. Over the past five years I've worked across startups and small teams, shipping interfaces that people actually enjoy using.",
-    "My approach favors clarity over cleverness — readable code, deliberate design decisions, and enough restraint to know when a feature isn't worth the complexity it adds. When I'm not writing code, I'm usually reading about type systems or tinkering with a side project that will never ship.",
+    "I'm not a professional developer—I'm simply curious, always experimenting, and trying to improve one step at a time. I use AI as a learning tool to help me understand concepts, explore ideas, and solve problems while I continue developing my skills.",
+    "I'm always open to learning from others, improving my code, and contributing whenever I can.",
   ],
-  availability: 'Available for new opportunities',
-  email: 'hello@alexrivera.dev',
+  availability: 'Open to work',
+  email: 'sanigkram24@gmail.com',
   resumeUrl: '/resume.pdf',
 }
 
 export const socials = [
-  { label: 'GitHub', href: 'https://github.com/', icon: 'github' as const },
-  { label: 'LinkedIn', href: 'https://linkedin.com/', icon: 'linkedin' as const },
-  { label: 'Email', href: 'mailto:hello@alexrivera.dev', icon: 'mail' as const },
+  { label: 'GitHub', href: 'https://github.com/Broadmaker', icon: 'github' as const },
+  { label: 'Email', href: 'mailto:sanigkram24@gmail.com', icon: 'mail' as const },
 ]
 
 export const navLinks = [
