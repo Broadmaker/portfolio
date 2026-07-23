@@ -8,7 +8,7 @@ export const projects: Project[] = [
       'A training quality management system for the Department of Education — tracks training programs, participant records, evaluations, and generates compliance reports. Built on Cloudflare Workers with D1 for the database layer.',
     tags: ['React', 'TypeScript', 'Vite', 'Cloudflare Workers', 'Cloudflare D1'],
     image:
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop',
     liveUrl: 'https://deped-training-qms.sanigkram24.workers.dev/',
     featured: true,
   },
