@@ -13,15 +13,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'northwind',
-    title: 'Northwind Studio',
+    id: 'exam-portal',
+    title: 'Exam Portal',
     description:
-      'A headless CMS-powered marketing site for a design studio, with a custom page builder and sub-second page loads via static generation.',
-    tags: ['Next.js', 'Sanity', 'Tailwind CSS'],
+      'An online examination system with timed assessments, auto-grading, and real-time result tracking — built with Vite on Cloudflare Workers with D1 for the database layer. Progressive Web App with offline support.',
+    tags: ['React', 'TypeScript', 'Vite', 'Cloudflare Workers', 'Cloudflare D1'],
     image:
-      'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop',
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/',
+      'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop',
+    liveUrl: 'https://exam-system-4h2.pages.dev/',
     featured: true,
   },
   {
