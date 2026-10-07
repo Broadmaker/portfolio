@@ -6,21 +6,23 @@ export const projects: Project[] = [
     title: 'DTR Tool — CSC Form 48 Generator',
     description:
       'Privacy-first CSC Form 48 Daily Time Record generator — biometric Excel is processed entirely in the browser with no database or uploads, producing clean, print-ready PDFs for Philippine government employees.',
-    tags: ['React', 'TypeScript', 'Vite', 'PWA', 'Client-side Processing'],
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'XLSX', 'PWA'],
     image:
       'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop',
     liveUrl: 'https://dtr-tool.pages.dev/',
+    repoUrl: 'https://github.com/Broadmaker/dtr-tool',
     featured: true,
   },
   {
     id: 'shs-gret',
     title: 'SHS GRET — Evaluation Tool',
     description:
-      'DepEd Senior High School evaluation tool that streamlines grading and retention workflows — automates GRET computations and generates reports for SHS assessment.',
-    tags: ['React', 'TypeScript', 'Vite', 'Cloudflare Pages'],
+      'Evaluation Tool for the Government Recognition of Private Basic Education Institutions offering the Senior High School (SHS) Program — digitizes the DepEd GRET workflow for streamlined evaluation and reporting.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router'],
     image:
       'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop',
     liveUrl: 'https://shs-gret.pages.dev/',
+    repoUrl: 'https://github.com/Broadmaker/shs-gret',
     featured: true,
   },
   {
