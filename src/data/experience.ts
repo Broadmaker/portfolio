@@ -12,7 +12,7 @@ export const experience: ExperienceItem[] = [
       'Assisted in maintaining and troubleshooting school IT infrastructure',
       'Supported administrative systems and provided end-user technical assistance',
     ],
-    logo: 'https://bootflare.com/wp-content/uploads/2025/09/Philippine-Department-Of-Education-Logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Department_of_Education_%28DepEd%29.svg',
   },
   {
     id: 'exp-2',
@@ -25,6 +25,6 @@ export const experience: ExperienceItem[] = [
       'Delivered lectures and hands-on labs for core computer science subjects',
       'Guided students through projects and assessments to reinforce practical skills',
     ],
-    logo: 'https://bootflare.com/wp-content/uploads/2025/09/Western-Mindanao-State-University-Logo.png',
+    logo: 'https://wmsu.edu.ph/wp-content/uploads/2024/05/site_logo.png',
   },
 ]

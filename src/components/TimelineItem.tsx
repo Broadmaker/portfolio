@@ -1,7 +1,17 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import type { ExperienceItem } from '@/types'
 
+function getCompanyInitials(company: string): string {
+  const words = company.split(/\s+/).filter(Boolean)
+  if (words.length === 1) return words[0].slice(0, 2).toUpperCase()
+  return (words[0][0] + words[1][0]).toUpperCase()
+}
+
 export function TimelineItem({ item, isLast }: { item: ExperienceItem; isLast: boolean }) {
+  const [imgError, setImgError] = useState(false)
+  const showLogo = Boolean(item.logo) && !imgError
+
   return (
     <motion.div
       initial={{ opacity: 0, x: -16 }}
@@ -11,13 +21,21 @@ export function TimelineItem({ item, isLast }: { item: ExperienceItem; isLast: b
       className="relative flex gap-5 md:gap-8"
     >
       <div className="flex flex-col items-center">
-        {item.logo ? (
-          <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-line dark:border-line-dark bg-white dark:bg-surface-dark shadow-md">
+        {showLogo ? (
+          <div className="relative flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-line dark:border-line-dark bg-white dark:bg-surface-dark shadow-md">
             <img
               src={item.logo}
               alt={`${item.company} logo`}
+              loading="lazy"
+              onError={() => setImgError(true)}
               className="h-14 w-14 object-contain"
             />
+          </div>
+        ) : item.logo ? (
+          <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-line dark:border-line-dark bg-gradient-to-br from-violet-500 to-indigo-600 shadow-md">
+            <span className="text-xl font-black tracking-tight text-white">
+              {getCompanyInitials(item.company)}
+            </span>
           </div>
         ) : (
           <span className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full bg-accent dark:bg-accent-light ring-4 ring-accent-soft dark:ring-accent-softDark" />
